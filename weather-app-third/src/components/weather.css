@@ -1,0 +1,137 @@
+.WeatherComponent {
+	height: 310px;
+	position: relative;
+	width: 35%;
+	background: rgba(0, 0, 0, 0.1);
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 20px 20px 25px #3152ad;
+	margin-top: 100px;
+	overflow: hidden;
+}
+
+.WeatherComponentClear {
+	height: 310px;
+	width: 35%;
+	background: rgba(0, 0, 0, 0.1);
+	color: white;
+	border-radius: 10px;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 20px 20px 25px #3152ad;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.MainInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.moreInfo {
+	height: 310px;
+	padding: 1rem;
+	position: absolute;
+	color: white;
+	color: black;
+	right: 0;
+	background-color: rgb(250, 252, 255);
+	left: 0;
+	bottom: 0;
+	transition: .5s;
+	transform: translateY(100%);
+	overflow: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	visibility: hidden;
+}
+
+.WeatherComponent:hover .moreInfo {
+	transform: translateY(0%);
+	visibility: visible;
+}
+
+.more {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.detail {
+	padding: 1rem;
+	font-size: 15px;
+}
+
+.icon {
+	font-size: 10px;
+}
+
+.img {
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+}
+
+.img img {
+	width: 125px;
+	height: 125px;
+}
+
+.detail {
+	text-align: center;
+	color: rgb(123, 148, 231);
+}
+
+.icon {
+	font-size: 40px;
+	color: rgb(123, 148, 231);
+}
+
+input {
+	height: 30px;
+	border: none;
+	border-bottom: solid black 1px;
+	background: transparent;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:active {
+	outline: none;
+}
+
+@media (max-width: 900px) {
+	.WeatherComponent {
+		width: 90%;
+		height: 330px;
+	}
+	.WeatherComponentClear {
+		width: 90%;
+		height: 330px;
+		font-size: 10px;
+	}
+	h2 {
+		font-size: 15px;
+	}
+	.moreInfo {
+		height: 320px;
+	}
+	.detail {
+		font-size: 20px;
+	}
+	.icon {
+		font-size: 30px;
+	}
+}
