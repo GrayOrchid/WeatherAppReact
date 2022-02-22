@@ -41,6 +41,9 @@
 }
 
 @media (max-width: 900px) {
+	.items:hover{
+		transform: scale(1) translateY(0%);
+	}
 	.Anothertimelist {
 		overflow-y: scroll;
 	}
