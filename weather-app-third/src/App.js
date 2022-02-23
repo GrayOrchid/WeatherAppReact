@@ -34,7 +34,7 @@ const App = () => {
   return (
 <div className='App'>
    <Anothertimelist weather={weather} active={active} setActive={setActive} />
-   <div className="WeatherCont">
+   <div className="weather-cont">
       <input type="text" onChange={e=>setSearch(e.target.value)} value={search} />
       {search
       ?
@@ -43,9 +43,9 @@ const App = () => {
       <Clear/>
       }
       {search?
-      <h4  className='anotherTimeOpen' onClick={()=>setActive(true) }>Другое время суток</h4>
+      <h4  className='another-time-open' onClick={()=>setActive(true) }>Другое время суток</h4>
       :
-      <h4 className='anotherTimeOpen' >Введите название города </h4>
+      <h4 className='another-time-open' >Введите название города </h4>
       }
    </div>
 </div>

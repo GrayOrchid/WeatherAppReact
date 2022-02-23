@@ -16,7 +16,7 @@ body {
 	margin-top: 2rem;
 }
 
-.WeatherCont {
+.weather-cont {
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -24,11 +24,11 @@ body {
 	align-items: center;
 }
 
-.anotherTimeOpen{
+.another-time-open{
   cursor: pointer;
   transition: .4s;
   color: white;
 }
-.anotherTimeOpen:hover{
+.another-time-open:hover{
   text-shadow: 0 0 10px white;
 }

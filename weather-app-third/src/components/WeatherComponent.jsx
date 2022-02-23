@@ -18,8 +18,8 @@ const WeatherComponent = (props) => {
 
     return (
       <div className='Info'>
-      <div className="MainInfo">
-         <div className="mainInfoText">
+      <div className="main-info">
+         <div className="main-info-text">
             <h1>Город: {props.search}</h1>
             <h4>По состоянию на {time} MSK</h4>
             <h1>{props.item.hour[hour].temp_c} °C </h1>
@@ -30,7 +30,7 @@ const WeatherComponent = (props) => {
             <img src={props.item.hour[hour].condition.icon} alt="" />
          </div>
       </div>
-      <div className="moreInfo">
+      <div className="more-info">
          <div className="detail">
             {" "}
             <FontAwesomeIcon icon={faArrowDown} className="icon">

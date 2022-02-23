@@ -12,7 +12,7 @@
 	overflow: hidden;
 }
 
-.WeatherComponentClear {
+.weather-component-clear {
 	height: 310px;
 	width: 35%;
 	background: rgba(0, 0, 0, 0.1);
@@ -26,13 +26,13 @@
 	justify-content: center;
 }
 
-.MainInfo {
+.main-info {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.moreInfo {
+.more-info {
 	height: 310px;
 	padding: 1rem;
 	position: absolute;
@@ -53,7 +53,7 @@
 	visibility: hidden;
 }
 
-.WeatherComponent:hover .moreInfo {
+.WeatherComponent:hover .more-info {
 	transform: translateY(0%);
 	visibility: visible;
 }
@@ -119,7 +119,7 @@ input:active {
 		width: 90%;
 		height: 330px;
 	}
-	.WeatherComponentClear {
+	.weather-component-clear {
 		width: 90%;
 		height: 330px;
 		font-size: 10px;
@@ -127,7 +127,7 @@ input:active {
 	h2 {
 		font-size: 15px;
 	}
-	.moreInfo {
+	.more-info {
 		height: 320px;
 	}
 	.detail {

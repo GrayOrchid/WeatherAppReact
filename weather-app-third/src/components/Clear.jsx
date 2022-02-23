@@ -2,7 +2,7 @@ import React from 'react';
 import './weather.css'
 const Clear = () => {
     return (
-        <div className='WeatherComponentClear'>
+        <div className='weather-component-clear'>
             <h1>Введите название города</h1>
         </div>
     );
